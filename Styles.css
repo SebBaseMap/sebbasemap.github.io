@@ -1,0 +1,520 @@
+*
+/* main styling */ 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+/* set static font size */ 
+html {
+    font-size: 19px;
+    scroll-behavior: smooth;
+}
+
+/* set static body styling */ 
+body {
+    background-color: #ffffff;
+    color: #141414;
+    line-height: 1.6;
+    transition: 0.5s;
+}
+
+/* navigation bar styling */ 
+nav {
+    background: #244137;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* styling for anchors in navigation */ 
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* styling for hover in navigation */ 
+nav a:hover {
+    color: #38bc6a;
+}
+
+/* dark mode styling for .js  
+.toggle_dark_mode {
+  position: sticky;
+  top: 5px;
+  right: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding-right: 12px;
+    
+  background-color: #244137;
+  color: white;
+  border: 2px solid white;
+  border-color: #ffffff;
+  border-radius: 8px;
+    
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+} */
+
+/* homepage styling, set container to same colour as nav bar  and split into grid*/ 
+.homepage_container{
+  background-color: #244137;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* left grid */ 
+.homepage_left{
+  grid-column: 1 / 2;
+  color: white;
+}
+
+/* right grid */ 
+.homepage_right{
+  grid-column: 2 / 2;
+  margin-left: -210px;
+  margin-right: 20px;
+}
+
+/* styling for left container */ 
+.homepage_text_cont{
+  width: 73%;
+  margin: 20px;
+  margin-right: -210px;
+  padding: 20px;
+  background-color: #2b2b2b;
+  opacity: 78%;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  color: var(--lighttext);
+}
+
+/* styling for container text */ 
+.homepage_text{
+  color: var(--lighttext);
+  text-align: left;
+  font-family: 'Montserrat' sans-serif;
+  padding: 10px;
+  opacity: 100%;
+}
+
+/* styling for GIS image */ 
+.homepage_image{
+  width: 60%;
+  margin-right: 200px;
+  margin-bottom: 50px;
+  height: auto;
+  object-fit: fill;
+  border-radius: 8px;
+}
+
+/* styling for the my name */ 
+.homepage_title{
+  width: 100%;
+  position: relative;
+  top: 550px;
+  margin-left: 5%;
+  padding: 10px;
+  transform: translateY(-115%);
+  text-align: left;
+  font-size: 25px;
+  color: var(--lighttext);
+}
+
+/* styling for intro container, make 2 containers again */
+.intro_cont{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* left grid */
+.intro_left{
+  grid-column: 1 / 2;
+}
+
+/* right grid */
+.intro_right{
+  grid-column: 2 / 2;
+  padding: 40px;
+}
+
+/* styling for intro image */
+.intro_image{
+  height: auto;
+  width: 500px;
+  float: right;
+  padding: 40px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  border-right: 3px solid var(--darktext);
+}
+
+/* styling for intro text */
+.intro_text{
+  text-align: left;
+  max-width: 600px;
+}
+
+/* styling for rodriguez.html about text container */
+.about_cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* left grid */
+.about_left{
+  grid-column: 1 / 2;
+}
+
+/* right grid */
+.about_right{
+  grid-column: 2 / 2;
+  padding: 20px;
+  width: 1200px;
+}
+
+/* styling for about image */
+.about_image{
+  height: auto;
+  width: 650px;
+  float: right;
+  padding: 40px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  border-right: 3px solid var(--darktext);
+}
+
+/* styling for about text */
+.about_text{
+  text-align: left;
+  max-width: 1200px;
+}
+
+/* keeps about info in centre of page */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* education overview styling */
+.overview{
+  margin-left: 100px;
+  margin-top: 75px;
+}
+
+/* makes title bigger */
+.overview h2 {
+  font-size: 60px;
+}
+
+/* bold type of studies */
+.overview dt {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 125px;
+}
+
+/* italicize university and college */
+.overview dd {
+  font-size: 30px;
+  font-style: italic;
+  margin-left: 175px;
+}
+
+/* align resume download to centre */
+.resume{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style portfolio text */
+.Portfolio_Text{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style first button */
+.button {
+  border: 1px solid white;
+  border-radius: 10rem;
+  width: 200px;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+/* style hover for first button */
+.button:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+
+/* style second button */
+.button_blk {
+  border: 1px solid black;
+  border-radius: 10rem;
+  width: 100px;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+/* style hover for second button */
+.button_blk:hover {
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+
+/* buffer for second button */
+.button_buffer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Sticky Jump Bar */
+.jump-bar {
+    position: sticky;
+    top: 60px;
+    background: #2c2c2c;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1000;
+}
+
+.jump-bar a {
+    color: white;
+    text-decoration: none;
+    /*font-size: 0.9rem;*/
+    transition: color 0.3s;
+}
+
+.jump-bar a:hover {
+    color: #38bc6a;
+}
+
+/* Main Container */
+.portfolio-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Project Cards */
+.project-card {
+    margin-bottom: 80px;
+    width: 100%;
+    text-align: left; 
+    scroll-margin-top: 100px
+}
+
+.image-wrapper img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.project-info h2 {
+    margin-top: 25px;
+    font-size: 32px;
+    color: #282828;
+}
+
+.project-info p {
+    max-width: 1000px;
+    margin: 15px 0;
+    color: #282828;
+}
+
+hr {
+    width: 50%;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin-bottom: 80px;
+}
+
+.resume-container {
+    width: auto;
+    margin-top: 40px;
+    margin-right: 300px;
+    margin-left: 60px;
+    margin-bottom: 100px;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #244137;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.resume-layout {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Education Styling */
+.education-column {
+    flex: 4;
+}
+
+.edu-item {
+    margin-bottom: 25px;
+}
+
+.edu-item h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.edu-meta {
+    font-style: italic;
+    color: #7f8c8d;
+    margin: 5px 0 10px 0;
+}
+
+.edu-item ul {
+    padding-left: 20px;
+    color: #444;
+}
+
+.edu-item li {
+    margin-bottom: 8px;
+}
+
+/* Expertise Styling */
+.expertise-column {
+    width: 250px; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+
+.expertise-block h3 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.expertise-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;     
+    gap: 8px;            
+}
+
+
+.expertise-grid span {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block; 
+}
+
+
+/* style footer */
+.footer {
+  background: #244137;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  height: 7%;
+  width: 100%;
+  color: var(--lighttext);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* style for footer text */
+.footer p {
+color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+
+}
+
+/* style for footer anchor */
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+/* style for switching to dark mode */
+body.dark_mode {
+  background-color: #141414;
+  color: white;
+}

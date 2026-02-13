@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | GIS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="rodriguez.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+        </div>
+    </nav>
+
+    <nav class="jump-bar">
+        <a href="#project1">Trinity Bellwoods Park Survey</a>
+        <a href="#project2">Map of PEI</a>
+        <a href="#project3">London Evacuation Poster</a>
+        <a href="#project4">Nuclear Power Facility MCDA</a>
+        <a href="#project5">Remote Sensing Wetland Analysis</a>
+        <a href="#project6">Cycling Infrastructure Project</a>
+    </nav>
+
+    <main class="portfolio-container">
+        
+
+        <section id="project1" class="project-card">
+
+            <h1>Portfolio</h1>
+            <p>Welcome to my portfolio, here is some recent work I've done highlighting my GIS Skillset. If you want to discuss my work further or are interested in other projects, connect with me on LinkedIn.</p>
+            <br>
+            <hr>
+            <div class="project-info">
+                <h2>Trinity Bellwoods Park Field Study</h2>
+            </div>
+            <br>
+            <div class="image-wrapper">
+                <img src="Assets/proj1.PNG" alt="Trinity Bellwoods Park Survey">
+            </div>
+            <div class="project-info">
+                <p>During my first semester at Fanshawe College, I did a field survey project around waste facilities in Trinity Bellwoods Park. This project was built throughout the entire semester, and began with basic data collection online for building a base map in ArcGIS Pro. Afterwards, the basemap was sent to ArcGIS Online, and used to create a Field Maps application, as well as a Survey123 form for data collection. I collected data at the park in early November, which included visiting each listed site, and updating the bin count and types, as well as noting empty sites and undocumented sites as well. Finally, a report was constructed and a final map was built highlighting the types of bins at each site, as well as a Dashboard to highlight the key statistics from data collection.</p>
+                <br>
+                <p>You can find my full Story Map going over the entire project <a href="https://storymaps.arcgis.com/stories/119aa18abd3449c59025c48668ae0c48" target="_blank">here</a></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="project2" class="project-card">
+            <div class="project-info">
+                <h2>Map of PEI</h2>
+            </div>
+            <br>
+            <div class="image-wrapper">
+                <img src="Assets/433d8994-1.png" alt="Map of PEI">
+            </div>
+            <div class="project-info">
+                <p>For my fundamentals of GIS class, I created a map of the landforms of PEI, inspired by the <a href="https://peteratwoodprojects.wordpress.com/design-projects/#jp-carousel-753" target="_blank">Peter Atwood Map of Nova Scotia</a>. This project involved loading shapefiles into ArcGIS Pro, and styling them appropriately. This project was much more of a design challenge rather than a technical one, and taught me a lot about all the vast options available in ArcGIS Pro when creating a layout.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="project3" class="project-card">
+            <div class="project-info">
+                <h2>London Evacuation Plan Poster</h2>
+            </div>
+            <br>
+            <div class="image-wrapper">
+                <img src="Assets/RodriguezS-Assign4.png" alt="London Evacuation Poster">
+            </div>
+            <div class="project-info">
+                <p>Another project from my fundamentals of GIS class, this involved creating a poster for a chemical rail spill evacuation plan in London Ontario. Elements such as road networks, bus routes, dissemination blocks, railways, and schools were loaded into ArcGIS, processed and clipped, and then put into a model builder to run the evacuation operation. Part of the difficulty of this project was in creating an eye-catching, informative poster, while also finding a way to show many different important elements on the map at once.</p>
+            </div>
+        </section>
+
+        <hr>
+    
+        <section id="project4" class="project-card">
+            <div class="project-info">
+                <h2>Determining a New Location for a Nuclear Power Facility in Ontario</h2>
+            </div>
+            <br>
+            <div class="image-wrapper">
+                <img src="Assets/346final.PNG" alt="Nuclear Power Facility Map">
+            </div>
+            <div class="project-info">
+                <p>While in my last year of undergrad, my final group project for my GIS and Modelling for Environmental Applications class involved using multi-criteria decision analysis for selecting a new location for a nuclear power facility in Ontario. This project began with research into the environmental factors needed to construct such a facility, and the subsequent data acquisition for said factors. This included population centres, water bodies, road networks, fuel facilities, and indigenous populations and reserves. A model was constructed and a weighted overlay was implemented to identify 3 different potential sites. Our final report went over the pros and cons for each site, and our paper was published in the Queen’s Global Encounters: New Visions Journal (GENV Journal).</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="project5" class="project-card">
+            <div class="project-info">
+                <h2>Remote Sensing Analysis for Wetland Change</h2>
+            </div>
+            <br>
+            <div class="image-wrapper">
+                <img src="Assets/415.PNG" alt="Trinity Bellwoods Park Survey">
+            </div>
+            <div class="project-info">
+                <p>For my fourth year capstone project, I performed a remote sensing analysis for a coastal saltmarsh in Nova Scotia. The goal of this project was to better understand how the salt marsh was changing over a 20 year period in the face of warming temperatures, as well as to understand why certain remote sensing classification algorithms perform differently according to their environments. The main part of this project included loading LandSat 8 imagery of the wetland between 2005 and 2024 into ENVI, and cross referencing the results against the most up to date raster of the wetlands from the Canadian Wetland Inventory. Multiple classification methods were tested on the images to determine the most accurate algorithms, and two different methods were chosen for further analysis. The classification rasters were overlaid on ArcGIS Pro to look for evidence of shrinking or expanding. In the end, both methods showed evidence of landward migration and coastal squeeze respectively, indicating that using the most accurate method for classification is crucial in understanding how the marsh is changing over time.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="project6" class="project-card">
+            <div class="project-info">
+                <h2>Kingston Cycling Infrastructure Analysis</h2>
+            </div>
+            <br>
+            <div class="image-wrapper">
+                <img src="Assets/SA2.PNG" alt="Cycling Analysis Map">
+            </div>
+            <div class="project-info">
+                <p>My final group project for my Spatial Analysis class involved a cyclicing infrastructure analysis in Kingston Ontario. This project focused on analyzing spatial data related to cycling infrastructure in Kingston, with a particular emphasis on understanding the distribution of self-reported bike owners, and predicting cycling rates based on facility availability.  A location-allocation analysis in ArcGIS Pro identified Lafleur Park as an optimal site for a new cycling education Center, facilitating accessible cycling for residents. However, the analysis also revealed disparities in cycling infrastructure across Kingston, with downtown areas and university districts showing notable deficiencies despite high potential for cycling activity.</p>
+            </div>
+        </section>
+
+    </main>
+
+     <!-- Footer -->
+    <div class="footer">
+      <p>Connect with me through my LinkedIn Account!  </p>
+        <a href="https://www.linkedin.com/in/sebastian-rodriguez-9578b21a4/" target="_blank" class="social-icon">
+        <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+</body>
